@@ -1,0 +1,47 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b09e99;
+}
+.container {
+    width: 90%;
+    height: 70%;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+.container__btn {
+    display: block;
+    margin: 30px auto 20px auto;
+    padding: 10px 20px;
+    border: none;
+    background: #1c5ba5;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+.container__quote-box {
+    margin: 10%;
+}
+.container__quote-icon {
+   width: 24px;
+    height: 24px;
+}
+.container__quote {
+    display: block;
+    color: #4d5a69;
+    font-size: 18px;
+
+}
+.container__author {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+}
