@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+html {
+  font-size: 10px;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2f7;
+}
+.container {
+  box-shadow: 3px 3px 5px 6px #ccc;
+  width: 80%;
+  max-width: 330px;
+  height: 90%;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.reload-icon {
+  font-size: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 5%;
+  right: 8%;
+  cursor: pointer;
+}
+.container__user-avatar {
+  margin: 2rem 0 0.5rem 0;
+  border-radius: 50% 50%;
+  box-shadow: 2px 2px 3px 3px #ddd;
+  aspect-ratio: attr(width) / attr(height);
+}
+.container__user-name {
+  margin-top: 1rem;
+  font-weight: normal;
+  color: #252424;
+}
+.address {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.address__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.address__value {
+  font-size: 1.4rem;
+  color: gray;
+}
+.user__information {
+  margin-top: 2rem;
+  text-align: center;
+  color: rgb(99, 97, 97);
+  font-size: 1.3rem;
+  line-height: 158%;
+  padding: 0 8%;
+}
+.membership-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.membership-heading {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  align-self: flex-start;
+  color: rgb(92, 89, 89);
+  padding-left: 10%;
+  font-weight: 600;
+}
+.membership-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.membership-rank {
+  padding-left: 10%;
+  align-self: flex-start;
+  color: rgb(214, 160, 24);
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.membership-btn {
+  margin-right: 10%;
+  border: 0.2rem solid #8edc86;
+  padding: 0.4rem 1.3rem;
+  border-radius: 0.4rem;
+  color: #69be5f;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.membership-btn:hover {
+  background: #8edc86;
+  color: #fff;
+}
+.footer {
+  margin-top: 2rem;
+}
+.footer-heading {
+  color: gray;
+  font-size: 1.4rem;
+}
+.socials {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.social-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+@media (min-width: 440px) {
+  .container {
+    height: 90%;
+  }
+  .user__information {
+    font-size: 1.5rem;
+    line-height: 160%;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    height: 75%;
+  }
+  .footer {
+    margin-top: 3rem;
+  }
+}
